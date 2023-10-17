@@ -539,6 +539,9 @@ class ParseLiveElement<T extends ParseObject> extends ParseLiveListElement<T> {
               super.object = parseResponse.result.first;
             }
             break;
+          case LiveQueryClientEvent.userDisconnected:
+          case LiveQueryClientEvent.disconnected:
+            break;
         }
       });
     });
