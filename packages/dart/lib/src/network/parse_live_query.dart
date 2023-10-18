@@ -390,7 +390,9 @@ class LiveQueryClient {
 
     Subscription? subscription;
     if (actionData.containsKey('op') && actionData['op'] == 'connected') {
-      print('Re subscription:$_requestSubscription');
+      if (_debug) {
+        print('Re subscription:$_requestSubscription');
+      }
 
       _requestSubscription.values.toList().forEach((Subscription subscription) {
         _subscribeLiveQuery(subscription);
