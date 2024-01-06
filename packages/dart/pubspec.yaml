@@ -24,9 +24,7 @@ dependencies:
   # Networking
   dio: ^5.2.0+1
   http: ^1.1.0
-
-  # new build breaks, add ^ when fixed v2.4.2
-  web_socket_channel: 2.4.0
+  web_socket_channel: ^2.4.0
 
   #Database
   sembast: ^3.4.6+1
