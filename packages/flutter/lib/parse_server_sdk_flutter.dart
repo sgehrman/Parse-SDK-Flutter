@@ -109,29 +109,29 @@ class Parse extends sdk.Parse
 
   @override
   Future<sdk.ParseConnectivityResult> checkConnectivity() async {
-    switch (await Connectivity().checkConnectivity()) {
-      case ConnectivityResult.wifi:
-        return sdk.ParseConnectivityResult.wifi;
-      case ConnectivityResult.mobile:
-        return sdk.ParseConnectivityResult.mobile;
-      case ConnectivityResult.none:
-        return sdk.ParseConnectivityResult.none;
-      default:
-        return sdk.ParseConnectivityResult.wifi;
+    final events = await Connectivity().checkConnectivity();
+
+    if (events.contains(ConnectivityResult.none)) {
+      return sdk.ParseConnectivityResult.none;
+    } else if (events.contains(ConnectivityResult.mobile)) {
+      return sdk.ParseConnectivityResult.mobile;
     }
+
+    return sdk.ParseConnectivityResult.wifi;
   }
 
   @override
   Stream<sdk.ParseConnectivityResult> get connectivityStream {
-    return Connectivity().onConnectivityChanged.map((ConnectivityResult event) {
-      switch (event) {
-        case ConnectivityResult.wifi:
-          return sdk.ParseConnectivityResult.wifi;
-        case ConnectivityResult.mobile:
-          return sdk.ParseConnectivityResult.mobile;
-        default:
-          return sdk.ParseConnectivityResult.none;
+    return Connectivity()
+        .onConnectivityChanged
+        .map((List<ConnectivityResult> events) {
+      if (events.contains(ConnectivityResult.none)) {
+        return sdk.ParseConnectivityResult.none;
+      } else if (events.contains(ConnectivityResult.mobile)) {
+        return sdk.ParseConnectivityResult.mobile;
       }
+
+      return sdk.ParseConnectivityResult.wifi;
     });
   }
 
