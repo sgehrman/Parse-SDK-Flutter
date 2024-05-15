@@ -1,4 +1,4 @@
-part of '../../../parse_server_sdk.dart';
+part of flutter_parse_sdk;
 
 /// Handles exception instead of throwing an exception
 ParseResponse buildParseResponseWithException(Exception exception) {

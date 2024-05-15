@@ -1,4 +1,4 @@
-part of '../../parse_server_sdk.dart';
+part of flutter_parse_sdk;
 
 List _convertJSONArrayToList(List<dynamic> array) {
   return array.map(parseDecode).toList();

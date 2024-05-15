@@ -1,4 +1,4 @@
-part of '../../parse_server_sdk.dart';
+part of flutter_parse_sdk;
 
 class CoreStoreMemoryImp implements CoreStore {
   static Map<String, dynamic> _data = <String, dynamic>{};

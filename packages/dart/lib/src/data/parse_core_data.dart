@@ -1,4 +1,4 @@
-part of '../../../parse_server_sdk.dart';
+part of flutter_parse_sdk;
 
 /// Singleton class that defines all user keys and data
 class ParseCoreData {

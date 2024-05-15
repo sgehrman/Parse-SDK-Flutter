@@ -1,4 +1,4 @@
-part of '../../../parse_server_sdk.dart';
+part of flutter_parse_sdk;
 
 /// An operation that adds a new element to an array field,
 /// only if it wasn't already present

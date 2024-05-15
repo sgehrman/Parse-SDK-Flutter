@@ -1,4 +1,4 @@
-part of '../../parse_server_sdk.dart';
+part of flutter_parse_sdk;
 
 class ParseUser extends ParseObject implements ParseCloneable {
   /// Creates an instance of ParseUser

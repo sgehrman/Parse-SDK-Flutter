@@ -1,4 +1,4 @@
-part of '../../../parse_server_sdk.dart';
+part of flutter_parse_sdk;
 
 typedef ParseObjectConstructor = ParseObject Function();
 typedef ParseUserConstructor = ParseUser Function(

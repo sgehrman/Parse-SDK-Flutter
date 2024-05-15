@@ -1,4 +1,4 @@
-part of '../../../parse_server_sdk.dart';
+part of flutter_parse_sdk;
 
 /// Represents an operation performed on Parse data. It defines the core
 /// functionality of any operation performed on Parse data.

@@ -1,4 +1,4 @@
-part of '../../parse_server_sdk.dart';
+part of flutter_parse_sdk;
 
 class _ParseArray implements _Valuable<List>, _ParseSaveStateAwareChild {
   _ParseArray({this.setMode = false});

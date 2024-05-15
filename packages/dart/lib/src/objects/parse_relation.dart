@@ -1,4 +1,4 @@
-part of '../../parse_server_sdk.dart';
+part of flutter_parse_sdk;
 
 abstract class ParseRelation<T extends ParseObject> {
   //The owning object of this ParseRelation

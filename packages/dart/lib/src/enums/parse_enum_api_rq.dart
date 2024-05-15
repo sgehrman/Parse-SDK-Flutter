@@ -1,4 +1,4 @@
-part of '../../../parse_server_sdk.dart';
+part of flutter_parse_sdk;
 
 /// Used to define the API calls made in ParseObject logs
 enum ParseApiRQ {

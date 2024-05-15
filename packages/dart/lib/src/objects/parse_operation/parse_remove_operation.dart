@@ -1,4 +1,4 @@
-part of '../../../parse_server_sdk.dart';
+part of flutter_parse_sdk;
 
 /// An operation that removes every instance of an element from an array
 class _ParseRemoveOperation extends _ParseArrayOperation {

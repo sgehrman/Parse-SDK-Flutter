@@ -1,4 +1,4 @@
-part of '../../parse_server_sdk.dart';
+part of flutter_parse_sdk;
 
 const String keyLatitude = 'latitude';
 const String keyLongitude = 'longitude';

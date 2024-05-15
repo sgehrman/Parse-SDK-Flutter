@@ -1,4 +1,4 @@
-part of '../../../parse_server_sdk.dart';
+part of flutter_parse_sdk;
 
 /// Handles an API response and logs data if [bool] debug is enabled
 @protected
