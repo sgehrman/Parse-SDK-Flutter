@@ -1,6 +1,6 @@
 /// If you change this file, you should apply the same changes to the 'parse_websocket_io.dart' file
 
-import 'dart:html' as html;
+import 'package:web/web.dart' as web;
 
 import 'package:web_socket_channel/html.dart';
 import 'package:web_socket_channel/web_socket_channel.dart';
@@ -13,10 +13,10 @@ class WebSocket {
   static const int closing = 2;
   static const int closed = 3;
 
-  final html.WebSocket _webSocket;
+  final web.WebSocket _webSocket;
 
   static Future<WebSocket> connect(String liveQueryURL) async {
-    final html.WebSocket webSocket = html.WebSocket(liveQueryURL);
+    final web.WebSocket webSocket = web.WebSocket(liveQueryURL);
     await webSocket.onOpen.first;
     return WebSocket._(webSocket);
   }
