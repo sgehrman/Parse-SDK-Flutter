@@ -1,4 +1,4 @@
-part of flutter_parse_sdk;
+part of '../../../parse_server_sdk.dart';
 
 typedef ParseClientCreator = ParseClient Function(
     {required bool sendSessionId, SecurityContext? securityContext});
