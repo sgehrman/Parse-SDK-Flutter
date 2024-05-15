@@ -1,4 +1,4 @@
-part of '../../parse_server_sdk_flutter.dart';
+part of flutter_parse_sdk_flutter;
 
 /// A class that provides a mechanism for showing system notifications in the app.
 class ParseNotification {
