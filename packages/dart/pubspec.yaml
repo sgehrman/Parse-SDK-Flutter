@@ -34,7 +34,7 @@ dependencies:
   universal_io: ^2.2.2
   uuid: ^3.0.7
   web: ^0.5.1
-  web_socket_channel: ^2.4.5
+  web_socket_channel: ^3.0.0
   xxtea: ^2.1.0
 
 dev_dependencies:
