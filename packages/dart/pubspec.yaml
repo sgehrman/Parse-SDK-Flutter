@@ -33,7 +33,7 @@ dependencies:
   timezone: ^0.9.4
   universal_io: ^2.2.2
   uuid: ^4.4.2
-  web: ^0.5.1
+  web: ^1.0.0
   web_socket_channel: ^3.0.1
   xxtea: ^2.1.0
 
