@@ -11,7 +11,7 @@ import 'package:flutter/material.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 import 'package:parse_server_sdk/parse_server_sdk.dart' as sdk;
 import 'package:parse_server_sdk_flutter/src/storage/core_store_directory_io.dart'
-    if (dart.library.html) 'package:parse_server_sdk_flutter/src/storage/core_store_directory_web.dart';
+    if (dart.library.js_interop) 'package:parse_server_sdk_flutter/src/storage/core_store_directory_web.dart';
 import 'package:sembast/sembast.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
