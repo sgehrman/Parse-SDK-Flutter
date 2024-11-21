@@ -202,7 +202,7 @@ class _ParseDioClient with dio.DioMixin implements dio.Dio {
   }) {
     options ??= dio.Options();
     options.headers ??= <String, dynamic>{};
-    if (!identical(0, 0.0)) {
+    if (!parseIsWeb) {
       options.headers![keyHeaderUserAgent] = _userAgent;
     }
     options.headers![keyHeaderApplicationId] = parseCoreData.applicationId;

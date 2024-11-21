@@ -131,7 +131,7 @@ class _ParseHTTPClient extends http.BaseClient {
   /// Overrides the call method for HTTP Client and adds custom headers
   @override
   Future<http.StreamedResponse> send(http.BaseRequest request) {
-    if (!identical(0, 0.0)) {
+    if (!parseIsWeb) {
       request.headers[keyHeaderUserAgent] = _userAgent;
     }
     request.headers[keyHeaderApplicationId] = parseCoreData.applicationId;
