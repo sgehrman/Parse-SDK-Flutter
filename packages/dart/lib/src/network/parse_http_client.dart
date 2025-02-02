@@ -5,7 +5,7 @@ import 'package:http/http.dart' as http;
 
 import 'package:parse_server_sdk/parse_server_sdk.dart';
 
-import 'http_client_io.dart' if (dart.library.js) 'http_client_js.dart';
+import 'http_client_io.dart' if (dart.library.js_interop) 'http_client_js.dart';
 
 class ParseHTTPClient extends ParseClient {
   ParseHTTPClient(
