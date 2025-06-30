@@ -37,9 +37,16 @@ dynamic parseEncode(dynamic value, {bool full = false}) {
   }
 
   if (value is Map) {
+    //  was getting crashes when in debug mode
+    // previously it was modifying value and not returning
+    // the value type was ParseBaseFile, but assigning a Map<String, String?> crashed, types didn't match
+    final newMap = <dynamic, dynamic>{};
+
     value.forEach((dynamic k, dynamic v) {
-      value[k] = parseEncode(v, full: full);
+      newMap[k] = parseEncode(v, full: full);
     });
+
+    return newMap;
   }
 
   if (value is ParseGeoPoint) {
