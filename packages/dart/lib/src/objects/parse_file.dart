@@ -6,16 +6,12 @@ class ParseFile extends ParseFileBase {
   /// {https://docs.parseplatform.org/rest/guide/#files/}
   ParseFile(this.file,
       {String? name,
-      String? url,
-      bool? debug,
-      ParseClient? client,
-      bool? autoSendSessionId})
+      super.url,
+      super.debug,
+      super.client,
+      super.autoSendSessionId})
       : super(
           name: file != null ? path.basename(file.path) : name!,
-          url: url,
-          debug: debug,
-          client: client,
-          autoSendSessionId: autoSendSessionId,
         );
 
   File? file;

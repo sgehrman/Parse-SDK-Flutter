@@ -93,12 +93,9 @@ class ParseNetworkResponse {
 class ParseNetworkByteResponse extends ParseNetworkResponse {
   ParseNetworkByteResponse({
     this.bytes,
-    final String data = 'byte response',
-    final int statusCode = -1,
-  }) : super(
-          data: data,
-          statusCode: statusCode,
-        );
+    super.data = 'byte response',
+    super.statusCode,
+  });
 
   final List<int>? bytes;
 }

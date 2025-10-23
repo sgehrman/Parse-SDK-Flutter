@@ -1,4 +1,4 @@
-/// If you change this file, you should apply the same changes to the 'parse_websocket_html.dart' file
+// If you change this file, you should apply the same changes to the 'parse_websocket_html.dart' file
 
 import 'dart:io' as io;
 
