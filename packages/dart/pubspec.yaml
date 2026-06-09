@@ -19,13 +19,13 @@ topics:
   - backend
 
 environment:
-  sdk: ">=3.0.0 <4.0.0"
+  sdk: '>=3.0.0 <4.0.0'
 
 dependencies:
   collection: ^1.19.1
   dio: ^5.9.2
   http: ^1.6.0
-  meta: ^1.18.3
+  meta: ^1.18.0
   mime_type: ^1.0.1
   path: ^1.9.1
   sembast: ^3.8.8+1
