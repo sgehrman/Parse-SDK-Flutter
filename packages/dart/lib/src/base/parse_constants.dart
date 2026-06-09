@@ -83,4 +83,4 @@ const String keyVarInstallationId = 'installationId';
 const String keyError = 'error';
 const String keyCode = 'code';
 
-const bool parseIsWeb = bool.fromEnvironment('dart.library.js_util');
+const bool parseIsWeb = bool.fromEnvironment('dart.library.js_interop');
